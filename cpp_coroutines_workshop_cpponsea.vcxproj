@@ -137,6 +137,7 @@
     <ClCompile Include="note.cpp" />
     <ClCompile Include="second_excercise_solution.cpp" />
     <ClCompile Include="second_solution_attempt.cpp" />
+    <ClCompile Include="third_excercise_solution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="notes.txt" />
