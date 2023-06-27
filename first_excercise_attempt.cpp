@@ -63,4 +63,5 @@ std::future<int> foo() {
 int main()
 {
     std::cout << foo().get() << "\n";
+    // https://godbolt.org/z/We1Mr4935
 }
