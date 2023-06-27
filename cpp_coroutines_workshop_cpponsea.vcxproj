@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="first_excercise_attempt.cpp" />
+    <ClCompile Include="first_excercise_solution.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="note.cpp" />
   </ItemGroup>
