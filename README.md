@@ -70,3 +70,8 @@ std::suspend_always
 std::suspend_never
 
 only return_value or return_void NOT BOTH
+
+struct coro_deleter
+{
+
+};
