@@ -26,4 +26,47 @@ auto function(Ts...)          // unpacked at compile time so it is fine
 template<typename T>
 auto function(T x, ...)       // c-style is not allowed
 
-coroutine_return_type -->
+coroutine_return_type
+
+std::coroutine_traits : ReturnType, Args...  --> provides the promise_type
+std::coroutine_handle : Promise              --> does not do lifetime management, you will need to destroy the coroutine using
+                                                 .destroy();
+task<void> coro()
+{
+    int i = co_await f();
+    std::cout << "f() => " << i << "\n";
+}
+
+template<typename T>
+struct task
+{
+    // this needs to be here.
+    stuct promise_type
+    {
+    };
+}
+
+template<class R, class... ARgs>
+  requires requires {typename R::promise_type;}
+sturct promise_type<R, ARgs>
+{
+    using type = R::promise_type;
+};
+
+struct promise_type
+{
+    promise_type() = defualt;
+    promise_type(coro_args...);
+
+    get_return_object;
+    return_value(auto expr)
+    yield_value(auto expr);
+};
+
+initial_suspend        --> returns awaitable, that specifies the coroutines initilization
+final_suspend noexcept --> return awaitable that specifies that the coroutines behaviour on its finalization.
+
+std::suspend_always
+std::suspend_never
+
+only return_value or return_void NOT BOTH
