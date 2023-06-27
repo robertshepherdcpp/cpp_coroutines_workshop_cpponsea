@@ -21,6 +21,9 @@
     <ClCompile Include="note.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="first_excercise_attempt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="notes.txt" />

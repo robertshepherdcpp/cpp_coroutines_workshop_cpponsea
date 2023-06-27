@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="first_excercise_attempt.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="note.cpp" />
   </ItemGroup>
