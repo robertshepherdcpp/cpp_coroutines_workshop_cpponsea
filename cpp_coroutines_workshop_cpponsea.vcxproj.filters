@@ -30,6 +30,9 @@
     <ClCompile Include="second_solution_attempt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="second_excercise_solution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="notes.txt" />
