@@ -73,5 +73,13 @@ only return_value or return_void NOT BOTH
 
 struct coro_deleter
 {
-
 };
+
+```cpp
+struct awaiter
+{
+    bool await_ready();
+    auto await_suspend(std::coroutine_handle<P> H)
+    T await_resume();
+};
+```
